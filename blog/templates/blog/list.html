@@ -1,5 +1,7 @@
 {% extends "base.html" %} {% block header-footer %} {% for item in posts %}
 
-<h1>{{item.title}}</h1>
-<p>{{item.body}}</p>
+<ul>
+  <a href="{{ item.get_absolute_url }}"> <li>{{item.title}}</li></a>
+</ul>
+
 {% endfor %} {% comment %} block {% endcomment %} {% endblock header-footer %}
