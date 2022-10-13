@@ -1,3 +1,3 @@
-{% extends "base.html" %} {% block header-footer %} <h1>{{post.title}}</h1>
-<br>
+{% extends "base.html" %} {% block header-footer %} <h1 class="mt-5">{{post.title}}</h1>
+<p class="text-muted">Written by {{post.author}} on {{post.created}}</p>
 <p>{{post.body}}</p> {% endblock header-footer %}
