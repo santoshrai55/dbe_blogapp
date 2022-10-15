@@ -14,7 +14,7 @@
 <body>
     <div class="container">
         <!-- -----Nav Bar --- -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded shadow" aria-label="Eighth navbar example">
             <div class="container">
                 <a class="navbar-brand" href="#">Container</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -46,7 +46,8 @@
                     </form>
                 </div>
             </div>
-        </nav> {% block header-footer %} {% endblock header-footer %}
+        </nav>
+        <div class="container m-3"> {% block header-footer %} {% endblock header-footer %} </div>
         <!-- ------- Footer--- -->
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
