@@ -1,3 +1,5 @@
 {% extends "base.html" %} {% block header-footer %} <h1 class="mt-5">{{post.title}}</h1>
-<p class="text-muted">Written by {{post.author.first_name}} on {{post.created}}</p>
-<p>{{post.body}}</p> {% endblock header-footer %}
+<div class="container fs-5">
+    <p class="text-muted">Written by {{post.author.first_name}} on {{post.created}}</p>
+    <p>{{post.body}}</p>
+</div> {% endblock header-footer %}
