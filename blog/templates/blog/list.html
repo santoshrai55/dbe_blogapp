@@ -1,6 +1,7 @@
 {% extends "base.html" %} {% block header-footer %} <ul class="mt-5"> {% for item in posts %} <a
-        href="{{ item.get_absolute_url }}" class="text-decoration-none">
-        <li class="list-unstyled mt-2 fs-5 text-primary">{{item.title}} <span class="text-secondary fw-lighter fs-6"> by
-                {{item.author.first_name}} on {{item.publish}}</span>
-        </li>
-    </a> {% endfor %} </ul> {% comment %} block {% endcomment %} {% endblock header-footer %}
+                href="{{ item.get_absolute_url }}" class="text-decoration-none">
+                <li class="list-unstyled mt-2 fs-5 text-info">{{item.title}} <span
+                                class="text-secondary fw-lighter fs-6"> by {{item.author.first_name}} on
+                                {{item.publish}}</span>
+                </li>
+        </a> {% endfor %} </ul> {% comment %} block {% endcomment %} {% endblock header-footer %}
